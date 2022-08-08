@@ -1,0 +1,86 @@
+{
+  "schools": [
+    {
+      "id": "seecs",
+      "name": "SEECS",
+      "image": "/gallery/seecs.jpg"
+    },
+    {
+      "id": "smme",
+      "name": "SMME",
+      "image": "/gallery/smme.jpg"
+    },
+    {
+      "id": "nice",
+      "name": "NICE",
+      "image": "/gallery/nice.jpg"
+    },
+    {
+      "id": "scme",
+      "name": "SCME",
+      "image": "/gallery/scme.jpg"
+    },
+    {
+      "id": "iese",
+      "name": "IESE",
+      "image": "/gallery/iese.png"
+    },
+    {
+      "id": "igis",
+      "name": "IGIS",
+      "image": "/gallery/igis.jpg"
+    },
+    {
+      "id": "s3h",
+      "name": "S3H",
+      "image": "/gallery/s3h.jpg"
+    },
+    {
+      "id": "nbs",
+      "name": "NBS",
+      "image": "/gallery/nbs.jpg"
+    },
+    {
+      "id": "sns",
+      "name": "SNS",
+      "image": "/gallery/sns.jpg"
+    },
+    {
+      "id": "asab",
+      "name": "ASAB",
+      "image": "/gallery/asab.jpg"
+    },
+    {
+      "id": "sada",
+      "name": "SADA",
+      "image": "/gallery/sada.jpg"
+    },
+    {
+      "id": "uspcase",
+      "name": "USPCAS-E",
+      "image": "/gallery/uspcase.jpg"
+    }
+  ],
+  "lifeAtNUST": [
+    {
+      "id": "students-and-cafes",
+      "name": "Students and Cafes",
+      "image": "/gallery/c1aerial.jpg"
+    },
+    {
+      "id": "studying-and-cafes",
+      "name": "Studying and Grades",
+      "image": "/gallery/exam.jpg"
+    },
+    {
+      "id": "societies",
+      "name": "Societies",
+      "image": "/gallery/societies.jpeg"
+    },
+    {
+      "id": "social-events",
+      "name": "Social Events",
+      "image": "/gallery/events.jpg"
+    }
+  ]
+}

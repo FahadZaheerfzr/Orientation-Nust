@@ -1,13 +1,17 @@
-import Layout from "../components/Layout"
+import SplashComponent from "../components/SplashComponent/SplashComponent";
+import MyParticles from "../components/Particles/Particles";
 
 
-export default function Home() {
-  return (
-    <>
-    <Layout>
+const Home = () => {
+    return (
+        <>
+            <div className='mt-60 md:mt-64 relative z-30'>
+                <SplashComponent/>
+            </div>
 
-    </Layout>
-    
-    </>
-  )
+            <MyParticles/>
+        </>
+    )
 }
+
+export default Home;

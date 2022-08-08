@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b31cca7d-4583-4ded-887d-2fce40700dd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Orientation-Nust.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CardList/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CardList/CardList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CardList/CardList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CardList/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modal/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/gallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/gallery/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/gallery/life-at-nust/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/gallery/school/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/asab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/c1aerial.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/events.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/exam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/iese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/igis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/nbs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/nice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/s3h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/sada.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/scme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/seecs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/smme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/sns.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/societies.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/uspcase.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/gallery.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SplashComponent/SplashComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SplashComponent/SplashComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2D4OS0NXT59mCcSTH7eIw0yEQSk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jack\Desktop\Orientation-Nust\pages\gallery\schools" />
+      <recent name="C:\Users\Jack\Desktop\Orientation-Nust\pages\gallery" />
+      <recent name="C:\Users\Jack\Desktop\Orientation-Nust\pages\index" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b31cca7d-4583-4ded-887d-2fce40700dd1" name="Changes" comment="" />
+      <created>1659954895982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659954895982</updated>
+      <workItem from="1659954895983" duration="2547000" />
+      <workItem from="1659965128299" duration="1520000" />
+      <workItem from="1659983841248" duration="1872000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
