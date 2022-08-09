@@ -16,7 +16,7 @@ const QuestionsList = ({questions, name}) => {
     }
 
     return (
-        <div className='mx-12' style={{marginTop: `${(questions.length + 2) * 2}px`}}>
+        <div className='mx-0 xl:mx-12' style={{marginTop: `${(questions.length + 2) * 2}px`}}>
             {questions.map((question, index) => (
                 <Question key={index} question={question} isSelected={selected === `${name}-${index}`}
                           onClick={() => handleClick(index)}/>

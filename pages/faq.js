@@ -22,7 +22,7 @@ const FAQ = ({faqs}) => {
                     question, please reach out to us.</p>
             </div>
 
-            <div className='mt-24 grid mx-48' style={{gridTemplateColumns: '1fr 4fr'}}>
+            <div className='mt-24 grid mx-48 faq-grid'>
                 <Categories categories={faqs.map(faq => faq.name)} handleClick={handleClick} selected={selected.name}/>
                 <QuestionsList name={selected.name} questions={selected.questions}/>
             </div>
