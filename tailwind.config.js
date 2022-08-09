@@ -14,7 +14,7 @@ module.exports = {
             "lapis-lazuli": "#12629E",
             'white': '#ffffff',
             'black': '#121212',
-            'gray': '#444444',
+            'gray': '#dedede',
         },
         extend: {
             keyframes: {

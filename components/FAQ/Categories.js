@@ -1,4 +1,5 @@
 import {AiOutlineHome, AiOutlineRight} from "react-icons/ai";
+import {useTheme} from "next-themes";
 
 const icon = {
     'Category 1-dark': <AiOutlineHome size={26} color={'#121212'}/>,
@@ -17,6 +18,8 @@ const icon = {
 
 const Categories = ({categories, handleClick, selected}) => {
 
+    const {theme} = useTheme();
+
     return (
         <div>
             {categories.map(category => (
@@ -24,11 +27,11 @@ const Categories = ({categories, handleClick, selected}) => {
                     className={`my-4 p-4 flex justify-between items-center cursor-pointer transition duration-300 ease-out rounded-2xl ${category === selected ? 'bg-tyrian-purple' : ''}`}
                     key={category} onClick={() => handleClick(category)}>
                     <div className='flex'>
-                        {icon[`${category}-${selected === category ? 'light' : 'dark'}`]}
+                        {theme === 'dark' ? icon[`${category}-light`] : icon[`${category}-${selected === category ? 'light' : 'dark'}`]}
                         <span
-                            className={`text-lg ml-3 font-light ${category === selected ? 'text-white' : 'text-black'}`}>{category}</span>
+                            className={`text-lg ml-3 font-light ${selected === category ? 'text-white' : ''}`}>{category}</span>
                     </div>
-                    <AiOutlineRight size={20} color={category === selected ? '#ffffff' : '#121212'}/>
+                    <AiOutlineRight size={20} color={theme ==='dark' ? '#ffffff' : category === selected ? '#ffffff' : '#121212'}/>
                 </div>
             ))}
         </div>
