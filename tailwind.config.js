@@ -13,7 +13,7 @@ module.exports = {
             "prussian-blue": "#112E49",
             "lapis-lazuli": "#12629E",
             'white': '#ffffff',
-            'black': '#000000'
+            'black': '#121212'
         },
         extend: {},
     },
