@@ -1,7 +1,10 @@
 import {ThemeProvider} from 'next-themes'
 import '../styles/globals.css'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import Head from "next/head";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer";
 
 function MyApp({Component, pageProps}) {
     return (
@@ -13,6 +16,7 @@ function MyApp({Component, pageProps}) {
             <div className='mb-12'>
                 <Component {...pageProps} />
             </div>
+            <Footer/>
         </ThemeProvider>
     )
 
