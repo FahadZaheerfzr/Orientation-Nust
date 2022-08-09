@@ -14,7 +14,7 @@ module.exports = {
             "lapis-lazuli": "#12629E",
             'white': '#ffffff',
             'black': '#121212',
-            'card-gradient': 'linear-gradient(to bottom, #720240, #F26E83)',
+            'gray': '#444444',
         },
         extend: {
             keyframes: {
