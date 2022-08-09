@@ -27,7 +27,6 @@ a {
     }
 
     body {
-
         background: dark;
     }
 }
@@ -126,4 +125,30 @@ li {
     color: transparent;
     padding: 0 0.5rem;
     font-size: 18rem;
+}
+
+.schools-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+}
+
+.schools-grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .schools-grid-1, .schools-grid-2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .schools-grid-1, .schools-grid-2{
+        grid-template-columns: 1fr;
+    }
 }

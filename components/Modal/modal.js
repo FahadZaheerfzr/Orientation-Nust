@@ -23,7 +23,7 @@ const Modal = ({data, schools, lifeAtNUST, type}) => {
             <div onClick={handleClick}
                  className='absolute top-0 left-0 w-full z-50 overflow-y-auto max-h-full'>
                 <div className='flex justify-center items-center'>
-                    <div className='my-12 w-1/2 rounded-3xl overflow-hidden bg-white'>
+                    <div className='my-12 w-11/12 md:w-2/3 lg:w-1/2 rounded-3xl overflow-hidden bg-white'>
                         <div className='w-full h-96 bg-cover bg-no-repeat bg-center p-6'
                              style={{
                                  background: `linear-gradient(to top, rgba(114,2,64,0.3), rgba(114,2,64,0.3)), url(${data.image}) no-repeat top center`,
