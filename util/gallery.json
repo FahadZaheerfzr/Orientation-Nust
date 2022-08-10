@@ -109,6 +109,30 @@
       "name": "Saddle Club",
       "image": "/gallery/saddle.jpg",
       "content": "Horse-riding is an old tale, but NUST has made it accessible to all by pioneering Pakistan's first university-based horse-riding club! Take your Equestrian journey to new heights and foster a healthy and athletic lifestyle with NUST's Saddle Club membership!"
+    },
+    {
+      "id": "shuttle",
+      "name": "Shuttle",
+      "image": "/gallery/shuttle.jpg",
+      "content": "Traveling across our vast campus is no easy feat. Luckily, we have the shuttle service to thank for making this Herculean task easier. Just hop in and go wherever you want!"
+    },
+    {
+      "id": "gym",
+      "name": "Gym",
+      "image": "/gallery/gym.jpg",
+      "content": "Alongside nurturing your mind, NUST also empowers you to take care of your body. NUST Central Gym is a state of the art facility with modern equipment to cater to all the workout needs for both male and female students."
+    },
+    {
+      "id": "vr-headsets-and-3d-printers-at-the-library",
+      "name": "VR Headsets and 3D Printers at the Library",
+      "image": "/gallery/library.jpg",
+      "content": "Technology is in the name, and with the newly established Lincoln's Corner at NUST's immaculate Central Library, you too can explore the virtual world with cutting-edge VR Headsets, and up your creative mindset with the easily accessible 3-D Printers!"
+    },
+    {
+      "id": "bowling-alley",
+      "name": "Bowling Alley",
+      "image": "/gallery/bowling.png",
+      "content": "All work and no play is surely going to make life a drag. Thankfully, NUST H-12 has innumerable facilities through which one can unwind and have a fun time! One excellent example is NUST's Bowling Alley! Open to casuals and enthusiasts alike, it's a great place to relax and have a great relaxing time with like-minded individuals!"
     }
   ]
 }
