@@ -5,9 +5,11 @@ import Hero from "../components/Home/Hero";
 import Map from "../components/Home/Map";
 import Notes from "../components/Home/Notes";
 import messages from '../util/messages.json';
+import events from '../util/events.json';
 import Experience from "../components/Home/Experience";
+import Events from "../components/Home/Events";
 
-const Home = ({messages}) => {
+const Home = ({messages, events}) => {
 
     const [click, setClick] = useState(false);
 
@@ -38,6 +40,8 @@ const Home = ({messages}) => {
 
                 <Map/>
 
+                <Events events={events}/>
+
                 <Notes messages={messages}/>
 
                 <Experience/>
@@ -50,7 +54,7 @@ const Home = ({messages}) => {
 export const getStaticProps = async () => {
     return {
         props: {
-            messages
+            messages, events
         },
     }
 }

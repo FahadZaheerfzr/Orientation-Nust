@@ -1,0 +1,117 @@
+[
+  {
+    "day": "Day 1",
+    "activities": [
+      {
+        "name": "Morning Run 1",
+        "image": "/events/morning-run-1.jpg",
+        "date": "2022-01-01 09:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 2",
+        "image": "/events/morning-run-2.jpg",
+        "date": "2022-01-01 10:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 3",
+        "image": "/events/morning-run-3.jpeg",
+        "date": "2022-01-01 11:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      }
+    ]
+  },
+  {
+    "day": "Day 2",
+    "activities": [
+      {
+        "name": "Morning Run 1",
+        "image": "/events/morning-run-1.jpg",
+        "date": "2022-01-01 09:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 2",
+        "image": "/events/morning-run-2.jpg",
+        "date": "2022-01-01 10:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 3",
+        "image": "/events/morning-run-3.jpeg",
+        "date": "2022-01-01 11:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      }
+    ]
+  },
+  {
+    "day": "Day 3",
+    "activities": [
+      {
+        "name": "Morning Run 1",
+        "image": "/events/morning-run-1.jpg",
+        "date": "2022-01-01 09:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 2",
+        "image": "/events/morning-run-2.jpg",
+        "date": "2022-01-01 10:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 3",
+        "image": "/events/morning-run-3.jpeg",
+        "date": "2022-01-01 11:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      }
+    ]
+  },
+  {
+    "day": "Day 4",
+    "activities": [
+      {
+        "name": "Morning Run 1",
+        "image": "/events/morning-run-1.jpg",
+        "date": "2022-01-01 09:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 2",
+        "image": "/events/morning-run-2.jpg",
+        "date": "2022-01-01 10:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 3",
+        "image": "/events/morning-run-3.jpeg",
+        "date": "2022-01-01 11:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      }
+    ]
+  },
+  {
+    "day": "Day 5",
+    "activities": [
+      {
+        "name": "Morning Run 1",
+        "image": "/events/morning-run-1.jpg",
+        "date": "2022-01-01 09:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 2",
+        "image": "/events/morning-run-2.jpg",
+        "date": "2022-01-01 10:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "name": "Morning Run 3",
+        "image": "/events/morning-run-3.jpeg",
+        "date": "2022-01-01 11:00 AM",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      }
+    ]
+  }
+]

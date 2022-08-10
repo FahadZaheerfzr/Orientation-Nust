@@ -31,7 +31,7 @@ module.exports = {
                 }
             },
             animation: {
-                expand: 'expand 1s ease-in-out infinite',
+                expand: 'expand 1s ease-in-out infinite'
             }
         },
     },
