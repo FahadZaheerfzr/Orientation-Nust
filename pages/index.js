@@ -1,12 +1,9 @@
 import SplashComponent from "../components/SplashComponent/SplashComponent";
 import MyParticles from "../components/Particles/Particles";
 import {useEffect, useRef, useState} from "react";
-import Hero from "../components/Home/Hero";
-import Map from "../components/Home/Map";
 import Notes from "../components/Home/Notes";
 import messages from '../util/messages.json';
 import events from '../util/events.json';
-import Experience from "../components/Home/Experience";
 import Events from "../components/Home/Events";
 
 const Home = ({messages, events}) => {
@@ -36,16 +33,9 @@ const Home = ({messages, events}) => {
             <div ref={containerRef}
                  className={`mt-24 transition-opacity duration-500 ease-in-out ${click ? 'block' : 'hidden'}`}>
 
-                {/*<Hero/>*/}
-
-                {/*<Map/>*/}
+                <Notes messages={messages}/>
 
                 <Events events={events}/>
-
-                {/*<Notes messages={messages}/>*/}
-
-                {/*<Experience/>*/}
-
             </div>
         </>
     )
