@@ -44,14 +44,16 @@ const Events = ({events}) => {
                         </div>
                     ))}
                 </div>
-                <div className='w-full h-full bg-tyrian-purple border-t-4 border-b-4 border-r-4 border-ultra-red bg-cover bg-no-repeat p-12'
+                <div className='w-full h-full bg-tyrian-purple border-t-4 border-b-4 border-r-4 border-ultra-red bg-cover bg-no-repeat'
                      style={{
                          backgroundImage: `url(${selectedActivity.image})`,
                      }}>
-                    <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white'>{selectedActivity.name}</h1>
-                    <p className='text-lg opacity-50 mt-4 text-white'>{selectedActivity.date}</p>
+                    <div className='w-full h-full bg-tyrian-purple bg-opacity-30 p-12'>
+                        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white'>{selectedActivity.name}</h1>
+                        <p className='text-lg opacity-50 mt-4 text-white'>{selectedActivity.date}</p>
 
-                    <p className='text-xl text-white w-full lg:w-2/3 mt-12'>{selectedActivity.description}</p>
+                        <p className='text-xl text-white w-full lg:w-2/3 mt-12'>{selectedActivity.description}</p>
+                    </div>
                 </div>
             </div>
         </div>
