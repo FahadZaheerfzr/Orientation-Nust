@@ -21,7 +21,7 @@ const Events = ({events}) => {
                 </p>
             </div>
 
-            <div className='flex justify-center items-center mt-8'>
+            <div className='flex justify-center items-center mt-8 flex-wrap'>
                 {events.map((event, i) => (
                     <p key={i}
                        onClick={() => setSelectedEvent(event)}
@@ -31,11 +31,11 @@ const Events = ({events}) => {
                 ))}
             </div>
 
-            <div className='grid event-grid mt-12 mx:0 lg:mx-48 faq-grid'>
+            <div className='grid event-grid mt-12 mx:0 xl:mx-48 faq-grid'>
                 <div className=''>
                     {selectedEvent.activities.map((activity, i) => (
                         <div onClick={() => setSelectedActivity(activity)} key={i}
-                             className={`w-64 h-64 cursor-pointer border-ultra-red ${selectedActivity.name === activity.name ? 'border-t-4 border-b-4 border-l-4' : 'border-r-4'}`}
+                             className={`w-48 h-48 lg:w-64 lg:h-64 cursor-pointer border-ultra-red ${selectedActivity.name === activity.name ? 'border-t-4 border-b-4 border-l-4' : 'border-r-4'}`}
                         >
                             <div className='w-full h-full' style={{
                                 background: `linear-gradient(to top, rgba(114,2,64,0.3), rgba(114,2,64,0.3)), url(${activity.image}) no-repeat top center`,
@@ -51,7 +51,7 @@ const Events = ({events}) => {
                     <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white'>{selectedActivity.name}</h1>
                     <p className='text-lg opacity-50 mt-4 text-white'>{selectedActivity.date}</p>
 
-                    <p className='text-xl text-white w-2/3 mt-12'>{selectedActivity.description}</p>
+                    <p className='text-xl text-white w-full lg:w-2/3 mt-12'>{selectedActivity.description}</p>
                 </div>
             </div>
         </div>

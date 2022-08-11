@@ -36,15 +36,15 @@ const Home = ({messages, events}) => {
             <div ref={containerRef}
                  className={`mt-24 transition-opacity duration-500 ease-in-out ${click ? 'block' : 'hidden'}`}>
 
-                <Hero/>
+                {/*<Hero/>*/}
 
-                <Map/>
+                {/*<Map/>*/}
 
                 <Events events={events}/>
 
-                <Notes messages={messages}/>
+                {/*<Notes messages={messages}/>*/}
 
-                <Experience/>
+                {/*<Experience/>*/}
 
             </div>
         </>
