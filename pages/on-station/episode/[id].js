@@ -45,9 +45,13 @@ const episode = () => {
     <>
       {video && (
         <Layout title={`Episode ${video.id}`}>
-          <div className="flex flex-col items-center">
-            <div className="font-vogue text-5xl sm:text-7xl font-bold ">ON Station</div>
-            <div className="font-montserrat text-3xl sm:text-5xl pt-2 sm:pt-4">{video.title}</div>
+          <div className="flex flex-col items-center mt-20">
+            <div className="font-vogue text-5xl sm:text-7xl font-bold ">
+              ON Station
+            </div>
+            <div className="font-montserrat text-3xl sm:text-5xl pt-2 sm:pt-4">
+              {video.title}
+            </div>
             <div className="font-montserrat text-sm sm:text-lg text-center px-4 sm:px-20 py-4 sm:py-8">
               {video.description}
             </div>
@@ -59,7 +63,10 @@ const episode = () => {
               >
                 <Link href={`/on-station/episode/` + prevVideo.id}>
                   <div className="my-auto cursor-pointer dark:text-pale-pink text-tyrian-purple  md:px-2  z-3">
-                    <FontAwesomeIcon icon={faCaretLeft} className="text-5xl sm:text-7xl md:text-8xl" />
+                    <FontAwesomeIcon
+                      icon={faCaretLeft}
+                      className="text-5xl sm:text-7xl md:text-8xl"
+                    />
                   </div>
                 </Link>
               </div>
@@ -77,7 +84,10 @@ const episode = () => {
               <div className=" flex px-2">
                 <Link href={`/on-station/episode/` + nextVideo.id}>
                   <div className="my-auto cursor-pointer dark:text-pale-pink text-tyrian-purple  md:px-2 ">
-                    <FontAwesomeIcon icon={faCaretRight} className=" text-5xl sm:text-7xl  md:text-8xl" />
+                    <FontAwesomeIcon
+                      icon={faCaretRight}
+                      className=" text-5xl sm:text-7xl  md:text-8xl"
+                    />
                   </div>
                 </Link>
               </div>

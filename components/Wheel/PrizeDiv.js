@@ -5,7 +5,7 @@ const PrizeDiv = ({ spinDone, prizeNumber, hideOnMobile }) => {
     <div
       className={`md:basis-1/2 flex-col justify-center 
     md:w-full sm:w-3/4 w-full md:h-60 h-40 my-6
-    bg-center bg-no-repeat  rounded-2xl 
+    bg-center bg-no-repeat border-4 dark:border-ultra-red border-tyrian-purple  
     ${spinDone ? 'bg-[url("/focus.jpg")] bg-cover' : 'bg-[url("/s2w.png")] bg-contain'}
     ${hideOnMobile ? "hidden md:flex" : "flex md:hidden"}`}
     >

@@ -6,16 +6,12 @@ const Wheel = dynamic(() => import("../components/Wheel"), {
   ssr: false,
 });
 
-export default function Home() {
+export default function spinner() {
   return (
     <>
       <Layout title={"Spinner Wheel"}>
-        <div
-          className={``}
-        >
-          <div className="">
-            {typeof window !== undefined && <Wheel  data={data}  />}
-          </div>
+        <div className={`mt-20`}>
+          {typeof window !== undefined && <Wheel data={data} />}
         </div>
       </Layout>
     </>

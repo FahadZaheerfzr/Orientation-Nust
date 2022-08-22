@@ -9,6 +9,7 @@ import {
   faCircleQuestion,
   faTv,
   faDharmachakra,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
 const variants = {
@@ -32,9 +33,10 @@ const icons = [
   faHome,
   faBuildingUser,
   faPeopleGroup,
-  faCircleQuestion,
   faDharmachakra,
   faTv,
+  faDownload,
+  faCircleQuestion,
 ];
 
 export const MenuItem = ({ i }) => {
