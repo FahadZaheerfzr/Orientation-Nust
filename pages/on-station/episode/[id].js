@@ -76,7 +76,7 @@ const episode = () => {
                     src={video.url}
                     className="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
                     scrolling="no"
-                    allowfullscreen="true"
+                    allowFullScreen={true}
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   ></iframe>
                 </div>

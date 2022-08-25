@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Wheel } from "react-custom-roulette";
 import { TbFidgetSpinner } from "react-icons/tb";
 import { IoReload } from "react-icons/io5";
 import PrizeDiv from "./PrizeDiv";
 import Btn from "./Btn";
-
+import activities from "../../util/activities.js";
+import { useRouter } from "next/router";
 
 let spinCount = 0;
 // const data = [
@@ -36,7 +37,9 @@ colors["palePink"] = "rgb(249, 216, 215)";
 colors["lapisLazuli"] = "rgb(18, 98, 158)";
 colors["prussianBlue"] = "rgb(17, 46, 73)";
 
-export default ( { data } ) => {
+export default () => {
+  let data = [...activities];
+
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [spinDone, setSpinDone] = useState(false);
@@ -45,29 +48,32 @@ export default ( { data } ) => {
     let array = [];
     for (let i = 0; i < 10; i++) {
       let random = data.splice(Math.floor(Math.random() * data.length), 1);
+      // let random = data.splice(i[0], 1);
       array.push(random[0]);
     }
     return array;
   });
 
   const handleSpinClick = () => {
-    if(spinCount === 5) {
+    // console.log("handling spin click");
+    if (spinCount === 5) {
       alert("You are out of spins!!!");
       return;
     }
     const prizeIndex = Math.floor(Math.random() * selected.length);
     setPrizeNumber(selected[prizeIndex].option);
-    console.log("winning number is", selected[prizeIndex].option);
+    // console.log("winning number is", selected[prizeIndex].option);
     setMustSpin(true);
     spinCount++;
-    console.log('SPIN COUNT IS ', spinCount);
+    // console.log("SPIN COUNT IS ", spinCount);
   };
 
   const onFinishedSpinning = () => {
-    console.log("running onFinishedSpinning");
+    // console.log("running onFinishedSpinning");
     const randomIndex = selected.findIndex((x) => x.option === prizeNumber);
     const newNumber = data.splice(
       Math.floor(Math.random() * data.length),
+      // 0,
       1
     )[0];
     setSelected((prevState) => {
@@ -79,7 +85,8 @@ export default ( { data } ) => {
     });
     setSpinDone(false);
   };
-  console.log("selected ", selected);
+
+
   return (
     <>
       <div className="flex flex-col mb-10">
@@ -112,7 +119,7 @@ export default ( { data } ) => {
               radiusLineWidth={2}
               fontSize={15}
               textDistance={50}
-              spinDuration={1}
+              spinDuration={0.1}
             />
           </div>
           <div className="flex flex-col items-center w-full md:w-1/3">

@@ -1,4 +1,4 @@
-const data = [
+const activities = [
   {
     option: "1"
   },
@@ -61,4 +61,4 @@ const data = [
   }
 ]
 
-export default data;
+export default activities;
