@@ -5,30 +5,8 @@ import { IoReload } from "react-icons/io5";
 import PrizeDiv from "./PrizeDiv";
 import Btn from "./Btn";
 import activities from "../../util/activities.js";
-import { useRouter } from "next/router";
 
 let spinCount = 0;
-// const data = [
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-//   { option: "do some task " },
-// ];
 
 const colors = [];
 colors["tyrianPurple"] = "rgb(114, 2, 64)";
@@ -37,7 +15,7 @@ colors["palePink"] = "rgb(249, 216, 215)";
 colors["lapisLazuli"] = "rgb(18, 98, 158)";
 colors["prussianBlue"] = "rgb(17, 46, 73)";
 
-export default () => {
+const Spinner = () => {
   let data = [...activities];
 
   const [mustSpin, setMustSpin] = useState(false);
@@ -85,7 +63,6 @@ export default () => {
     });
     setSpinDone(false);
   };
-
 
   return (
     <>
@@ -153,3 +130,5 @@ export default () => {
     </>
   );
 };
+
+export default Spinner;

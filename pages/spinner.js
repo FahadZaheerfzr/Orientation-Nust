@@ -1,6 +1,5 @@
 import Layout from "../components/Layout";
 import dynamic from "next/dynamic";
-import data from "../util/activities2.js";
 
 const Wheel = dynamic(() => import("../components/Wheel"), {
   ssr: false,
@@ -11,7 +10,7 @@ export default function spinner() {
     <>
       <Layout title={"Spinner Wheel"}>
         <div className={`mt-20`}>
-          {typeof window !== undefined && <Wheel data={data} />}
+          {typeof window !== undefined && <Wheel />}
         </div>
       </Layout>
     </>
