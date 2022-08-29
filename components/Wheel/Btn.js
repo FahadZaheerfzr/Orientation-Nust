@@ -2,7 +2,7 @@ import React from "react";
 
 const Btn = ({ show, onClick, setHover, hover, text, Icon }) => {
   return (
-    <div>
+    <div className="">
       {show && (
         <button
           className={`bg-prussian-blue dark:bg-tyrian-purple hover:bg-[#1e4b7c] 
