@@ -8,8 +8,8 @@ const PrizeDiv = ({ spinDone, hideOnMobile }) => {
     >
       <div
         className={`text-base sm:text-xl md:text-base lg:text-xl
-      bg-prussian-blue  dark:bg-tyrian-purple rounded-xl
-       text-white font-mont text-center p-4`}
+        bg-tyrian-purple dark:bg-ultra-red
+        rounded-xl text-white font-mont text-center p-4`}
       >
         <div className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl mb-2 font-montserrat">
           OG Activities

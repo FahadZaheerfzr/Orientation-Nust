@@ -69,8 +69,8 @@ const Spinner = () => {
   return (
     <>
       <div className="flex flex-col pb-10">
-        <div className="flex text-prussian-blue dark:text-tyrian-purple justify-center text-5xl sm:text-7xl font-vogue font-bold pb-2 md:pb-10">
-          Spinner
+        <div className="flex dark:text-white text-tyrian-purple justify-center text-center text-4xl sm:text-6xl font-vogue font-bold pb-2 md:pb-10">
+          Orientation Guides Activities
         </div>
         <div className="flex flex-col md:flex-row justify-evenly ">
           <div className="flex flex-col items-center justify-center sm:p-0 p-2">
@@ -85,27 +85,27 @@ const Spinner = () => {
               }}
               backgroundColors={
                 theme === "dark"
-                  ? [colors.prussianBlue, colors.palePink]
-                  : [colors.tyrianPurple, colors.palePink]
+                  ? [colors.tyrianPurple, colors.palePink]
+                  : [colors.palePink, colors.ultraRed]
               }
               textColors={
                 theme === "dark"
                   ? ["white", colors.tyrianPurple]
-                  : ["white", colors.prussianBlue]
+                  : [colors.tyrianPurple, "white"]
               }
               outerBorderColor={
-                theme === "dark" ? colors.tyrianPurple : colors.prussianBlue
+                theme === "dark" ? colors.ultraRed : colors.tyrianPurple
               }
-              outerBorderWidth={5}
+              outerBorderWidth={3}
               // innerRadius={10}
               // innerBorderColor={
-              //   theme === "dark" ? colors.tyrianPurple : colors.prussianBlue
+              //   theme === "dark" ? colors.ultraRed : colors.tyrianPurple
               // }
               // innerBorderWidth={2}
               radiusLineColor={
-                theme === "dark" ? colors.tyrianPurple : colors.prussianBlue
+                theme === "dark" ? colors.ultraRed : colors.tyrianPurple
               }
-              radiusLineWidth={2}
+              radiusLineWidth={1}
               fontSize={15}
               textDistance={50}
               spinDuration={1}
@@ -117,7 +117,7 @@ const Spinner = () => {
             md:p-2 md:px-4
             p-4 text-xl
             md:my-4
-            dark:bg-prussian-blue bg-tyrian-purple rounded-lg`}
+            dark:bg-tyrian-purple bg-ultra-red rounded-lg`}
             >
               {spinDone ? (
                 <div className="">
