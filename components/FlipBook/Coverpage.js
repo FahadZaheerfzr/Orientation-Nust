@@ -30,7 +30,7 @@ const Page = ({ coverpage, visibility }, ref) => {
                         Legacy of
                     </div>
                     <div className='text-2xl md:text-4xl lg:text-6xl mt-6 font-vogue'>
-                        Orientation of NUST
+                        Orientation of NUT
                     </div>
                 </div>
 
