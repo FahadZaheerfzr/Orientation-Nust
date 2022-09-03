@@ -12,7 +12,7 @@ import {
   faSquareCaretRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-const episode = () => {
+const Episode = () => {
   const router = useRouter();
   const { id } = router.query;
   const getVideo = () => {
@@ -45,14 +45,14 @@ const episode = () => {
     <>
       {video && (
         <Layout title={`Episode ${video.id}`}>
-          <div className="flex flex-col items-center mt-20">
-            <div className="font-vogue text-5xl sm:text-7xl font-bold ">
+          <div className="flex  flex-col items-center mt-20 text-tyrian-purple dark:text-white">
+            <div className="  font-vogue text-5xl sm:text-7xl font-bold ">
               ON Station
             </div>
             <div className="font-montserrat text-3xl sm:text-5xl pt-2 sm:pt-4">
               {video.title}
             </div>
-            <div className="font-montserrat text-sm sm:text-lg text-center px-4 sm:px-20 py-4 sm:py-8">
+            <div className="font-sans text-sm sm:text-lg text-center px-4 sm:px-20 py-4 sm:py-8">
               {video.description}
             </div>
             <div className="flex justify-center w-full mb-10 md:mb-20">
@@ -70,7 +70,7 @@ const episode = () => {
                   </div>
                 </Link>
               </div>
-              <div className="bg-ultra-red dark:bg-tyrian-purple flex flex-col items-center w-full p-2 sm:p-4">
+              <div className="bg-tyrian-purple flex flex-col items-center w-full p-2 sm:p-4">
                 <div className="relative overflow-hidden w-full pt-[56%]">
                   <iframe
                     src={video.url}
@@ -99,4 +99,4 @@ const episode = () => {
   );
 };
 
-export default episode;
+export default Episode;

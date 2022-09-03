@@ -108,7 +108,7 @@ ul {
   padding: 25px;
   position: absolute;
   z-index: 30;
-  top: 100px;
+  top: 70px;
   width: 300px;
 }
 
@@ -317,5 +317,23 @@ li {
 @media screen and(max-width:639px) {
   #canvas{
     display: block;
+  }
+}
+
+.legacy-book{
+  position: relative;
+  z-index: 5;
+}
+
+.celebration-div{
+  background: url('/celebration.png');
+  background-size: 700px;
+  background-position:-10% 50%;
+  background-repeat: repeat-x;
+}
+
+@media screen and (max-width:1160px) {
+  .celebration-div{
+    background: none;
   }
 }

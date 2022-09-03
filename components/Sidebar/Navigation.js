@@ -37,21 +37,28 @@ const itemIds = [
   },
   {
     "id": 3,
-    "name":"OG Activities",
-    "href":"/og-activities",
+    "name":"Legacy",
+    "href":"/history",
   },
   {
     "id": 4,
     "name":"ON Station",
     "href":"/on-station/episode/1",
-  },  {
+  },
+  {
     "id": 5,
+    "name":"OG Activites",
+    "href":"/og-activities",
+  },
+  {
+    "id": 6,
     "name":"Downloads",
     "href":"/downloads",
   },
   {
-    "id": 6,
+    "id": 7,
     "name":"FAQs",
     "href":"/faqs",
   },
+  
 ];

@@ -15,7 +15,11 @@ const PrizeDiv = ({ spinDone, hideOnMobile }) => {
           OG Activities
         </div>
         Orientation Guides will do some fun activities with the freshmen
+<<<<<<< HEAD
         students. Spin the wheel to find out which one you'll be doing!
+=======
+        students. Spin the wheel to find out which one you&apos;ll be doing!
+>>>>>>> 07bf41de4407a8a473b49c8de655d7f35c958705
       </div>
     </div>
   );

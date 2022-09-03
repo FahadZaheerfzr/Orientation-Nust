@@ -5,7 +5,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 var FileSaver = require("file-saver");
 
-const downloads = () => {
+const Downloads = () => {
   const [dayHover, setDayHover] = useState(false);
   const [nightHover, setNightHover] = useState(false);
   return (
@@ -29,8 +29,8 @@ const downloads = () => {
         <div className="flex w-full justify-around my-6 sm:mt-6 md:mt-8 lg:mt-12">
           <div className="">
             <button
-              className={`bg-prussian-blue font-montserrat
-              hover:bg-lapis-lazuli hover:ring-2 hover:ring-prussian-blue transition-colors
+              className={`bg-tyrian-purple dark:bg-prussian-blue  font-montserrat
+              dark:hover:bg-lapis-lazuli hover:ring-2 dark:hover:ring-prussian-blue transition-colors
               lg:w-40  lg:text-3xl
               sm:w-32 sm:text-2xl
               p-2 w-24 text-white
@@ -60,8 +60,8 @@ const downloads = () => {
 
           <div className="">
             <button
-              className={`bg-prussian-blue font-montserrat
-              hover:bg-lapis-lazuli hover:ring-2 hover:ring-prussian-blue transition-colors
+              className={`bg-tyrian-purple dark:bg-prussian-blue font-montserrat
+              dark:hover:bg-lapis-lazuli hover:ring-2 dark:hover:ring-prussian-blue transition-colors
               lg:w-40  lg:text-3xl
               sm:w-32 sm:text-2xl
               p-2 w-24 text-white
@@ -94,4 +94,4 @@ const downloads = () => {
   );
 };
 
-export default downloads;
+export default Downloads;
