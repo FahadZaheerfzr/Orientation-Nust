@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { RadioGroup, Tab } from '@headlessui/react'
 import Image from 'next/image'
 import products from '../../util/merchandise'
+import Head from 'next/head'
 
 const product = {
     name: 'Merchandise',
@@ -138,7 +139,7 @@ export default function Merchandise() {
                                                         color.bgColor,
                                                         'h-8 w-8 border border-black border-opacity-10 rounded-full'
                                                     )}
-                                                    onClick={()=>{setImageIndex(color.index)}}
+                                                    onClick={() => { setImageIndex(color.index) }}
                                                 />
                                             </RadioGroup.Option>
                                         ))}

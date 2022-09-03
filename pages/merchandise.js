@@ -6,7 +6,7 @@ import React from 'react'
 function merchandise() {
     return (
         <>
-            <Layout>
+            <Layout title={"Buy Merchandise"}>
                 <Merchandise></Merchandise>
             </Layout>
         </>
