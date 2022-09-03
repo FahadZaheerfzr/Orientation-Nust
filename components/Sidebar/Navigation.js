@@ -48,7 +48,7 @@ const itemIds = [
   {
     "id": 5,
     "name":"OG Activites",
-    "href":"/og-activities",
+    "href":"/og_activities",
   },
   {
     "id": 6,

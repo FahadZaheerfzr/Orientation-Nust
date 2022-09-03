@@ -3,22 +3,22 @@
     "day": "Day 1",
     "activities": [
       {
-        "name": "Opening Ceremony",
+        "name": "Reception of Students",
         "image": "/events/Day1/opening.jpeg",
         "date": "2022-09-05 09:00 AM",
-        "description": ""
+        "description": "Students will be welcomed at the gates of the university and will be given a tour of their respective departments."
       },
       {
-        "name": "Interaction with OG",
+        "name": "Schools Address",
         "image": "/events/Day1/og.jpeg",
-        "date": "2022-09-05 02:00 PM",
-        "description": ""
+        "date": "2022-09-05 11:30 AM",
+        "description": "Students will be addressed by their respective schools in Jinnah Auditorium."
       },
       {
         "name": "Batch Photo",
         "image": "/events/Day1/batch-day.jpeg",
-        "date": "2022-09-05 05:00 PM",
-        "description": ""
+        "date": "2022-09-05 04:15 PM",
+        "description": "Students will be gathered in convocation ground for day and night batch photo."
       }
     ]
   },
@@ -26,22 +26,22 @@
     "day": "Day 2",
     "activities": [
       {
-        "name": "Registration in respective schools",
+        "name": "School Activities",
         "image": "/events/Day2/regis.jpg",
         "date": "2022-09-06 09:00 AM",
-        "description": ""
+        "description": "Students will be taken to their respective schools for fun activities."
       },
       {
-        "name": "OG Activities",
+        "name": "Life at NUST",
         "image": "/events/Day2/og.jpeg",
-        "date": "2022-09-06 02:00 PM",
-        "description": ""
+        "date": "2022-09-06 03:00 PM",
+        "description": "Student will be addressed regarding life at NUST in Jinnah Auditorium and NET Hall."
       },
       {
-        "name": "Sports Gala",
+        "name": "Sports Fest",
         "image": "/events/Day2/sports.jpeg",
         "date": "2022-09-06 05:00 PM",
-        "description": ""
+        "description": "Different sports competitions will be held in NBS ground."
       }
     ]
   },
@@ -52,19 +52,19 @@
         "name": "School visits",
         "image": "/events/Day3/school.jpeg",
         "date": "2022-09-07 09:00 AM",
-        "description": ""
+        "description": "Students will be given a tour of different schools."
       },
       {
-        "name": "OG Activities",
+        "name": "Plantation & Cleanliness Drive",
         "image": "/events/Day3/og.jpeg",
         "date": "2022-09-07 02:00 PM",
-        "description": ""
+        "description": "Students will be taken to NBS & Scholar Avenue for plantation and cleanliness drive."
       },
       {
-        "name": "Sports Gala",
+        "name": "Sports Fest",
         "image": "/events/Day3/sports.jpeg",
-        "date": "2022-09-07 05:00 PM",
-        "description": ""
+        "date": "2022-09-07 06:00 PM",
+        "description": "Different sports competitions will be held in NBS ground."
       }
     ]
   },
@@ -75,19 +75,19 @@
         "name": "School Visits",
         "image": "/events/Day4/school.jpeg",
         "date": "2022-09-08 09:00 AM",
-        "description": ""
+        "description": "Students will be given a tour of different schools."
       },
       {
-        "name": "OG Activities",
+        "name": "Society & Club Activities",
         "image": "/events/Day4/og.jpg",
         "date": "2022-09-08 02:00 PM",
-        "description": ""
+        "description": "Students will be given a tour of different societies and clubs."
       },
       {
         "name": "ON Fest",
         "image": "/events/Day4/fest.jpeg",
-        "date": "2022-09-08 05:00 PM",
-        "description": ""
+        "date": "2022-09-08 06:00 PM",
+        "description": "Festival of NUSTians will be held in NBS ground."
       }
     ]
   },
@@ -98,19 +98,19 @@
         "name": "School Visits",
         "image": "/events/Day5/school.jpeg",
         "date": "2022-09-09 09:00 AM",
-        "description": ""
+        "description": "Students will be given a tour of different schools."
       },
       {
         "name": "Closing Ceremony",
         "image": "/events/Day5/batch-night.jpg",
         "date": "2022-09-09 02:00 PM",
-        "description": ""
+        "description": "Closing ceremony will be held in Jinnah Auditorium."
       },
       {
-        "name": "Concert",
+        "name": "ON Fest",
         "image": "/events/Day5/concert.jpg",
-        "date": "2022-09-09 05:00 PM",
-        "description": ""
+        "date": "2022-09-09 06:00 PM",
+        "description": "Festival of NUSTians will be held in NBS ground."
       }
     ]
   }

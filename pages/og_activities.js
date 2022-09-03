@@ -5,7 +5,7 @@ const Wheel = dynamic(() => import("../components/Wheel"), {
   ssr: false,
 });
 
-export default function spinner() {
+export default function OG_Activities() {
   return (
     <>
       <Layout title={"Spinner Wheel"}>
