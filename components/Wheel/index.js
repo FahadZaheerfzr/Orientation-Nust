@@ -7,7 +7,6 @@ import Btn from "./Btn";
 import activities from "../../util/activities.js";
 import { useTheme } from "next-themes";
 
-
 const colors = [];
 colors["tyrianPurple"] = "rgb(114, 2, 64)";
 colors["ultraRed"] = "rgb(242, 110, 131)";
@@ -16,12 +15,9 @@ colors["lapisLazuli"] = "rgb(18, 98, 158)";
 colors["prussianBlue"] = "rgb(17, 46, 73)";
 
 const Spinner = () => {
-
-  
-
-
+  const [won, setWon] = useState([]);
   const { theme } = useTheme();
-  const [data, setData] = useState([...activities])
+  const [data, setData] = useState([...activities]);
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [longPrize, setLongPrize] = useState(0);
@@ -29,36 +25,25 @@ const Spinner = () => {
   const [hover, setHover] = useState(false);
   const [selected, setSelected] = useState(() => {
     let array = [];
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 8; i++) {
       let random = data.splice(Math.floor(Math.random() * data.length), 1);
-      // let random = data.splice(i[0], 1);
       array.push(random[0]);
     }
     return array;
   });
 
-  useEffect(() => {
-    console.log(data.length)
-    if (data.length < 2) {
-      setData([...activities])
-    }
-  }, [])
-
   const handleSpinClick = () => {
     const prizeIndex = Math.floor(Math.random() * selected.length);
     setPrizeNumber(selected[prizeIndex].option);
-    setLongPrize(selected[prizeIndex].longOption)
-    console.log("winning object is", selected[prizeIndex]);
+    setLongPrize(selected[prizeIndex].longOption);
+    setWon([...won, selected[prizeIndex]]);
     setMustSpin(true);
   };
 
   const onFinishedSpinning = () => {
-    console.log('global data is', selected)
-    // console.log("running onFinishedSpinning");
     const randomIndex = selected.findIndex((x) => x.option === prizeNumber);
     const newNumber = data.splice(
       Math.floor(Math.random() * data.length),
-      // 0,
       1
     )[0];
     setSelected((prevState) => {
@@ -70,8 +55,10 @@ const Spinner = () => {
     });
     setSpinDone(false);
 
-
-
+    if (data.length === 0) {
+      setData([...data, ...won]);
+      setWon([]);
+    }
   };
 
   return (
@@ -130,8 +117,7 @@ const Spinner = () => {
                   </span>
                 </div>
               ) : (
-                <div className="">Spin to get an exciting activity!
-                </div>
+                <div className="">Spin to get an exciting activity!</div>
               )}
             </div>
           </div>
