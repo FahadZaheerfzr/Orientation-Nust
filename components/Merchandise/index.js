@@ -3,41 +3,13 @@ import {motion} from 'framer-motion'
 import { RadioGroup, Tab } from '@headlessui/react'
 import Image from 'next/image'
 import products from '../../util/merchandise'
-import Head from 'next/head'
-
-const product = {
-    name: 'Merchandise',
-    price: 'Rs. 500',
-    images: [
-        {
-            id: 1,
-            name: 'Angled view',
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg',
-            alt: 'Angled front view with bag zipped and handles upright.',
-        },
-        {
-            id: 2,
-            name: 'Angled view',
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg',
-            alt: 'Angled front view with bag zipped and handles upright.',
-        }
-    ],
-    colors: [
-        { name: 'Washed Black', bgColor: 'bg-gray-700', selectedColor: 'ring-gray-700' },
-        { name: 'White', bgColor: 'bg-white', selectedColor: 'ring-gray-400' },
-        { name: 'Washed Gray', bgColor: 'bg-gray-500', selectedColor: 'ring-gray-500' },
-    ],
-    description: `
-    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
-  `,
-}
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Merchandise() {
-    const [selectedColor, setSelectedColor] = useState(product.colors[0])
+    const [selectedColor, setSelectedColor] = useState(products.colors[0])
     const [imageIndex, setImageIndex] = useState(0)
 
     return (
@@ -92,11 +64,11 @@ export default function Merchandise() {
 
                     {/* Product info */}
                     <motion.div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-20" animate={{x:"0%"}} initial={{x:"-100vw"}}>
-                        <h1 className="text-3xl font-extrabold tracking-tight text-black dark:text-white">{product.name}</h1>
+                        <h1 className="text-3xl font-extrabold tracking-tight text-black dark:text-white">{products.name}</h1>
 
                         <div className="mt-3">
                             <h2 className="sr-only">Product information</h2>
-                            <p className="text-3xl text-black dark:text-white">{product.price}</p>
+                            <p className="text-3xl text-black dark:text-white">{products.price}</p>
                         </div>
 
 
@@ -106,7 +78,7 @@ export default function Merchandise() {
 
                             <div
                                 className="text-base text-black dark:text-white space-y-6 text-justify"
-                                dangerouslySetInnerHTML={{ __html: product.description }}
+                                dangerouslySetInnerHTML={{ __html: products.description }}
                             />
                         </div>
 
@@ -140,7 +112,6 @@ export default function Merchandise() {
                                                         color.bgColor,
                                                         'h-8 w-8 border border-black border-opacity-10 rounded-full'
                                                     )}
-                                                    onClick={() => { setImageIndex(color.index) }}
                                                 />
                                             </RadioGroup.Option>
                                         ))}
