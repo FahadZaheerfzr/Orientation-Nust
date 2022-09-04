@@ -57,6 +57,11 @@ const itemIds = [
   },
   {
     "id": 7,
+    "name":"Merchandise",
+    "href":"/merchandise",
+  },
+  {
+    "id": 8,
     "name":"FAQs",
     "href":"/faqs",
   },

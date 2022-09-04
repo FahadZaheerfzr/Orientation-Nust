@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useEffect } from "react";
 import { Wheel } from "react-custom-roulette";
 import { TbFidgetSpinner } from "react-icons/tb";
 import { IoReload } from "react-icons/io5";
@@ -20,6 +20,7 @@ const Spinner = () => {
   const [data, setData] = useState([...activities]);
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
+  const [longPrize, setLongPrize] = useState(0);
   const [longPrize, setLongPrize] = useState(0);
   const [spinDone, setSpinDone] = useState(false);
   const [hover, setHover] = useState(false);
@@ -44,6 +45,7 @@ const Spinner = () => {
     const randomIndex = selected.findIndex((x) => x.option === prizeNumber);
     const newNumber = data.splice(
       Math.floor(Math.random() * data.length),
+      // 0,
       1
     )[0];
     setSelected((prevState) => {
@@ -98,7 +100,7 @@ const Spinner = () => {
               radiusLineWidth={1}
               fontSize={25}
               textDistance={50}
-              spinDuration={0.1}
+              spinDuration={0.0.1}
             />
             <div
               className={`flex flex-col items-center text-center justify-center 
@@ -150,5 +152,7 @@ const Spinner = () => {
     </>
   );
 };
+
+export default Spinner;
 
 export default Spinner;

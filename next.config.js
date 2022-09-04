@@ -6,6 +6,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   swcMinify: true,
+  images: {
+    domains: ['tailwindui.com'],
+  },
   webpack(config, options) {
     const { isServer } = options;
     config.module.rules.push({
