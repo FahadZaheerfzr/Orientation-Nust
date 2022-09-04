@@ -1,6 +1,6 @@
 const products = {
-    name: 'Merchandise',
-    price: 'Rs. 500',
+    name: 'T-Shirt',
+    price: 'Rs. 1000',
     color_images: [[
         {
             id: 1,
