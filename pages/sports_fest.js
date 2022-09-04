@@ -20,18 +20,20 @@ const Sports_Fest = () => {
           </div>
           <div className="flex flex-row justify-evenly mt-6">
             <button
-              className={` text-white px-4 py-2 rounded-t-xl text-2xl font-mont w-80
-              ${selectedParticipant ? "bg-tyrian-purple" : "bg-ultra-red"}`}
+              className={`px-4 py-2 rounded-t-xl  font-bold
+              text-2xl
+              ${selectedParticipant ? "text-blue-700 border-b-blue-700 border-b-2 " : ""}`}
               onClick={() => {
                 setSelectedParticipant(true);
               }}
             >
-              Orientation Guides
+              OC &amp; Freshies
             </button>
 
             <button
-              className={`text-white px-4 py-2 rounded-t-xl text-2xl font-mont w-80
-              ${selectedParticipant ? "bg-ultra-red" : "bg-tyrian-purple"}`}
+              className={`px-4 py-2 rounded-t-xl  font-bold
+              text-2xl
+              ${selectedParticipant ? "" : "text-blue-700 border-b-blue-700 border-b-2 "}`}
               onClick={() => {
                 setSelectedParticipant(false);
               }}
@@ -41,7 +43,7 @@ const Sports_Fest = () => {
           </div>
         </div>
 
-        <div className="bg-blue-700">
+        <div className="">
           {selectedParticipant ? (
             <ParticipantTab type={true} fixtures={ogsFixtures} />
           ) : (

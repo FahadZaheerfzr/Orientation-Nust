@@ -82,7 +82,7 @@ export default function Footer() {
                 <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdjyF-qEHOFOHfPKCUmY4MBPjdeVR36-pmwwkFaGnHb0S0MjQ/viewform?usp=sf_link">
                   <button
                     type="button"
-                    className="w-full h-16 bg-white rounded-md py-2 px-4 flex items-center justify-center text-xl font-bold text-tyrian-purple hover:bg-tyrian-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-2xl border-white border-2"
+                    className="w-full h-16 bg-white rounded-md py-2 px-4 flex items-center justify-center text-xl font-bold text-tyrian-purple hover:bg-tyrian-purple transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-2xl border-white border-2"
                   >
                     Become Our Sponsor
                   </button>

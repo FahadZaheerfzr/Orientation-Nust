@@ -6,10 +6,9 @@ export default function Home() {
   return (
     <>
       <AnimatePresence exitBeforeEnter>
-        <Layout title={"Orientation 2022"} homePage={true}>
+        <Layout title={"Orientation 2022"} homePage={true} hideFooter={true}>
           <SplashComponent />
-          <div className="">
-          </div>
+          <div className=""></div>
         </Layout>
       </AnimatePresence>
     </>
