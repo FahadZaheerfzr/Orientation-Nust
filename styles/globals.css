@@ -79,6 +79,12 @@ nav {
   width: 300px;
   z-index: 10;
   background: #720240;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.background::-webkit-scrollbar {
+  display: none;
 }
 
 .button-nav {

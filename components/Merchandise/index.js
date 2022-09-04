@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {motion} from 'framer-motion'
 import { RadioGroup, Tab } from '@headlessui/react'
 import Image from 'next/image'
 import products from '../../util/merchandise'
@@ -40,13 +41,13 @@ export default function Merchandise() {
     const [imageIndex, setImageIndex] = useState(0)
 
     return (
-        <div className="bg-white dark:bg-black">
+        <div className="bg-white dark:bg-black pt-10 sm:pt-0">
             <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
                     {/* Image gallery */}
                     <Tab.Group as="div" className="flex flex-col-reverse">
                         {/* Image selector */}
-                        <div className="hidden mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none">
+                        <motion.div className="mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none"  animate={{x:"0%"}} initial={{x:"-100vw"}}>
                             <Tab.List className="grid grid-cols-4 gap-6">
                                 {products.color_images[imageIndex].map((image) => (
                                     <Tab
@@ -71,26 +72,26 @@ export default function Merchandise() {
                                     </Tab>
                                 ))}
                             </Tab.List>
-                        </div>
+                        </motion.div>
 
                         <Tab.Panels className="w-full aspect-w-1 aspect-h-1">
                             {products.color_images[imageIndex].map((image) => (
                                 <Tab.Panel key={image.id}>
-                                    <div className=''>
+                                    <motion.div className='' animate={{opacity: 1}} initial={{opacity: 0}} transition={{ duration: 1 }}>
                                         <Image
                                             src={image.src}
                                             alt={image.alt}
                                             layout='fill'
                                             className="w-full h-full object-center object-cover sm:rounded-lg"
                                         />
-                                    </div>
+                                    </motion.div>
                                 </Tab.Panel>
                             ))}
                         </Tab.Panels>
                     </Tab.Group>
 
                     {/* Product info */}
-                    <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-20">
+                    <motion.div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-20" animate={{x:"0%"}} initial={{x:"-100vw"}}>
                         <h1 className="text-3xl font-extrabold tracking-tight text-black dark:text-white">{product.name}</h1>
 
                         <div className="mt-3">
@@ -104,7 +105,7 @@ export default function Merchandise() {
                             <h3 className="sr-only">Description</h3>
 
                             <div
-                                className="text-base text-black dark:text-white space-y-6"
+                                className="text-base text-black dark:text-white space-y-6 text-justify"
                                 dangerouslySetInnerHTML={{ __html: product.description }}
                             />
                         </div>
@@ -156,7 +157,7 @@ export default function Merchandise() {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
