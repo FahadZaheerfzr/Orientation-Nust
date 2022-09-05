@@ -13,7 +13,7 @@ const CategoryCard = ({ category }) => {
       <div
         className={` text-white 
       dark:text-[#121212] dark:bg-ultra-red 
-      bg-tyrian-purple px-2 md:px-4 pt-4 pb-2 rounded md:rounded-lg my-8`}
+      bg-tyrian-purple px-2 md:px-4 pt-4 pb-2 rounded md:rounded-lg my-4`}
       >
         <Disclosure.Button
           className="w-full flex justify-between"
@@ -23,9 +23,8 @@ const CategoryCard = ({ category }) => {
         >
           <div className="w-10 "></div>
           <div className="flex justify-center text-xl md:text-3xl font-montserrat ">
-            <div className="w-10"></div>
-            <div className=" ">{category.category}</div>
-            <div className="w-10 flex  ">
+            <div className={`${hover&&'text-ultra-red dark:text-white'}`}>
+              {category.category}
               <FontAwesomeIcon icon={category.icon} className="ml-2 my-auto" />
             </div>
           </div>
@@ -60,19 +59,25 @@ const CategoryCard = ({ category }) => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-        <Disclosure.Panel>
-          {category.fixtures.map((fixture, index) => {
-            return (
-              <FixtureCard
-                key={index}
-                showType={category.showType}
-                fixture={fixture}
-                oneTeam={category.oneTeam}
-                note={category.note}
-              />
-            );
-          })}
-        </Disclosure.Panel>
+          <Disclosure.Panel>
+            {category.gNote && (
+              <div className="font-mont ml-1">
+                <span className="font-bold">Note:</span>&nbsp;
+                {category.gNote}
+              </div>
+            )}
+            {category.fixtures.map((fixture, index) => {
+              return (
+                <FixtureCard
+                  key={index}
+                  showType={category.showType}
+                  fixture={fixture}
+                  oneTeam={category.oneTeam}
+                  note={category.note}
+                />
+              );
+            })}
+          </Disclosure.Panel>
         </Transition>
         {/* note goes here */}
       </div>

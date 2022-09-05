@@ -10,18 +10,17 @@ const Sports_Fest = () => {
   return (
     <Layout title={"Sports Fest"}>
       <div className="flex flex-col mt-20">
-        <div className="flex justify-center font-vogue font-bold text-7xl mb-6">
+        <div className="flex justify-center font-vogue font-bold text-5xl md:text-7xl mb-6">
           Sports Fest
         </div>
 
         <div className="flex flex-col">
-          <div className="flex justify-center text-4xl font-montserrat">
+          <div className="flex justify-center text-2xl md:text-4xl font-montserrat">
             Fixtures
           </div>
-          <div className="flex flex-row justify-evenly mt-6">
+          <div className="flex flex-row justify-evenly mt-6 font-bold text-lg md:text-2xl">
             <button
-              className={`px-4 py-2 rounded-t-xl  font-bold
-              text-2xl
+              className={`px-4 py-2 rounded-t-xl  
               ${selectedParticipant ? "text-blue-700 border-b-blue-700 border-b-2 " : ""}`}
               onClick={() => {
                 setSelectedParticipant(true);
@@ -31,8 +30,7 @@ const Sports_Fest = () => {
             </button>
 
             <button
-              className={`px-4 py-2 rounded-t-xl  font-bold
-              text-2xl
+              className={`px-4 py-2 rounded-t-xl  
               ${selectedParticipant ? "" : "text-blue-700 border-b-blue-700 border-b-2 "}`}
               onClick={() => {
                 setSelectedParticipant(false);
