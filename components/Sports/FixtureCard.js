@@ -159,7 +159,7 @@ const FixtureCard = ({ fixture, oneTeam, note, showType }) => {
           leaveTo="transform scale-95 opacity-0"
         >
           <Disclosure.Panel>
-            <div className="dark:bg-tyrian-purple bg-ultra-red text-white dark:font-normal p-2 mt-2 rounded flex flex-col font-mont md:text-base lg:text-xl">
+            <div className="dark:bg-tyrian-purple bg-ultra-red text-white dark:font-normal p-2 mt-2 rounded flex flex-col font-mont text-sm md:text-base lg:text-lg">
               {fixture.type && !showType && (
                 <div className="flex">
                   <span className="font-montserrat">Type:</span> &nbsp;
